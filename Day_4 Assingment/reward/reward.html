@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-initial-scale=1.0">
+        <title>reward</title>
+    </head>
+    <body>
+        <h2>reward to the employees</h2>
+        <p>The criteria is as follows:<br>1.Sales from 0-5000 : 2%<br> 2.from 5001 - 10000 : 5%<br>3.Sales from 10001 - 20000 : 7%<br>4.Above 20000 - 10%</p>
+        <!--<script type="text/javascript" src="reward.js"></script> -->
+        <p id="use"></p>
+        <script>
+            function assing(sales){ 
+                if(sales === 0){
+                    document.getElementById('use').innerHTML="you haven't any rewards for this year";
+                }
+                else if (sales <= 5000 && sales > 0){
+                    document.getElementById('use').innerHTML=`your reward amount is Rs.${two}`;
+                }
+                else if(sales <= 10000 && sales > 5000){
+                    document.getElementById('use').innerHTML=`your reward amount is Rs.${five}`;
+                }
+                else if(sales > 10001){
+                    document.getElementById('use').innerHTML=`your reward amount is Rs.${seven}`;
+                }
+                else{
+                    document.getElementById('use').innerHTML=`your reward amount is Rs.${ten}`;
+                }
+            }
+
+            const sales = Number(prompt("Enter a number of sales :"));
+            const income = 10000*12 //monthly
+
+            // const reward = {
+            //     two = income/100 * 2,
+            //     five = income/100 * 5,
+            //     seven = income/100 * 7,
+            //     ten = income/100 * 10,     // if i declare the object prompt doesn't show at the time
+            // }
+            
+            let two = income/100 * 2;
+            let five = income/100 * 5;
+            let seven = income/100 * 7;
+            let ten = income/100 * 10;
+            const get = assing(sales);
+        </script>
+    </body>
+</html>
