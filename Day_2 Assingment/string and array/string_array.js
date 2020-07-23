@@ -19,5 +19,5 @@ let arr2 = ["i","am","yasar","arafath"];
 let arr3 = Array.from("hi hello")
 console.log(arr3); //Create an Array from a String 
 console.log(arr2.join()); //join the array elements into a string
-console.log(arr3.sort()); // sort method can do the arrange the by ascending order
+console.log(arr3.sort()); //sort method can do the arrange the by ascending order
 console.log(arr3.reverse()); // reverse is used to reverse the element be descending order
