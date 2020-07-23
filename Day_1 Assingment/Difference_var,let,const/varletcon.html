@@ -3,12 +3,19 @@
         <title>difference between var,let,const</title>
     </head>
     <body>
-        <h1>Var,Let,const</h1>
-        <p>$var declarations are globally scoped or function scoped while let and const are block scoped.</p>
-        <p>$var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.</p>
-        <p>$They are all hoisted to the top of their scope but while varvariables are initialized with undefined, let and const variables are not initialized.</p>
-        <p>$While var and let can be declared without being initialized, const must be initialized during declaration.</p>
-        <p>$var is global variable,let is a local variable, const is a constant variable</p>
+        <h2>Diffrence between var,let and const</h2>
+        <ol>
+            <li>let == block scope</li>
+            <li>var == function scope</li>
+            <li>const == block scope like let but immutable</li>
+        </ol>
+        <ul>
+            <li>var declarations are globally scoped or function scoped while let and const are block scoped.</li>
+            <li>var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared;<br>const variables can neither be updated nor re-declared.</li>
+            <li>They are all hoisted to the top of their scope but while varvariables are initialized with undefined, let and const variables are not initialized.</li>
+            <li>While var and let can be declared without being initialized, const must be initialized during declaration.</li>
+            <li>var is global variable,let is a local variable, const is a constant variable</li>
+        </ul>
         <script type="text/javascript" src = "varletcon.js"></script>
     </body>
 </html>
