@@ -26,4 +26,4 @@ console.log(name); //it shows a global variable only
 //--------------------------------------------------------------------------------
 //const
 const wash = "dress";
-//const wash = "car" --> this will show a error because const is unmountable
+// const wash = "car"  this will show you an error because const is unmountable 
